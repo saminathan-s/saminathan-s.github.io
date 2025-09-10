@@ -10,6 +10,7 @@ import {
   FaLinux,
   FaDocker,
   FaBitbucket,
+  FaGithub,
 } from 'react-icons/fa';
 import { BiLogoTypescript, BiLogoGit } from 'react-icons/bi';
 import {
@@ -28,9 +29,16 @@ import {
   SiAmazoncloudwatch,
   SiAkamai,
   SiSelenium,
+  SiPython,
+  SiLangchain,
+  SiGithubactions,
+  SiGithubcopilot,
+  SiClaude,
+  SiOllama,
+  SiGooglegemini,
 } from 'react-icons/si';
 import { TbBrandPowershell } from 'react-icons/tb';
-import { DiJenkins } from 'react-icons/di';
+import { DiJenkins, DiSqllite } from 'react-icons/di';
 import { motion } from 'motion/react';
 
 const iconVariants = (duration) => ({
@@ -117,6 +125,15 @@ const Skills = () => {
           <BiLogoTypescript className='text-4xl text-blue-400' />
         </motion.div>
         <motion.div
+          variants={iconVariants(3)}
+          initial='initial'
+          animate='animate'
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+          title='Python'
+        >
+          <SiPython className='text-4xl text-yellow-200' />
+        </motion.div>
+        <motion.div
           variants={iconVariants(4)}
           initial='initial'
           animate='animate'
@@ -180,6 +197,15 @@ const Skills = () => {
           <SiOracle className='text-4xl text-red-500' />
         </motion.div>
         <motion.div
+          variants={iconVariants(2)}
+          initial='initial'
+          animate='animate'
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+          title='SQLite'
+        >
+          <DiSqllite className='text-4xl text-cyan-700' />
+        </motion.div>
+        <motion.div
           variants={iconVariants(1.5)}
           initial='initial'
           animate='animate'
@@ -233,6 +259,15 @@ const Skills = () => {
         >
           <SiRedhatopenshift className='text-4xl text-red-600' />
         </motion.div>
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial='initial'
+          animate='animate'
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+          title='Langchain'
+        >
+          <SiLangchain className='text-4xl text-green-600' />
+        </motion.div>
       </motion.div>
       <motion.h6
         whileInView={{ x: 0, opacity: 1 }}
@@ -265,6 +300,24 @@ const Skills = () => {
           title='SVN'
         >
           <SiSubversion className='text-4xl text-cyan-700' />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(3)}
+          initial='initial'
+          animate='animate'
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+          title='Github'
+        >
+          <FaGithub className='text-4xl' />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial='initial'
+          animate='animate'
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+          title='Github Actions'
+        >
+          <SiGithubactions className='text-4xl text-blue-500' />
         </motion.div>
         <motion.div
           variants={iconVariants(4)}
@@ -346,6 +399,42 @@ const Skills = () => {
           title='Selenium'
         >
           <SiSelenium className='text-4xl text-green-500' />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2.5)}
+          initial='initial'
+          animate='animate'
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+          title='Github Copilot'
+        >
+          <SiGithubcopilot className='text-4xl' />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2.5)}
+          initial='initial'
+          animate='animate'
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+          title='Claude'
+        >
+          <SiClaude className='text-4xl text-amber-600' />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4)}
+          initial='initial'
+          animate='animate'
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+          title='Ollama'
+        >
+          <SiOllama className='text-4xl' />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4)}
+          initial='initial'
+          animate='animate'
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+          title='Gemini CLI'
+        >
+          <SiGooglegemini className='text-4xl text-blue-500' />
         </motion.div>
       </motion.div>
     </div>
